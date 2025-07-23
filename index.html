@@ -602,6 +602,18 @@
                             <p class="text-slate-400">rithikakaruppusamy143@gmail.com</p>
                         </div>
                     </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-3 rounded-full mr-4">
+                            <i class="fas fa-phone-alt text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">Phone</h4>
+                            <p class="text-slate-400">+91 7708815572</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="mt-8">
                     <h4 class="font-bold mb-4">Follow Me</h4>
                     <div class="flex space-x-4">
@@ -617,24 +629,24 @@
 
             <div>
                 <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
-                <form class="space-y-6">
+                <form action="https://formspree.io/f/xdoqrbpr" method="POST" class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label for="name" class="block mb-2 font-medium">Your Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none" required>
+                            <input type="text" name="name" id="name" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none" required>
                         </div>
                         <div>
                             <label for="email" class="block mb-2 font-medium">Your Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none" required>
+                            <input type="email" name="email" id="email" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none" required>
                         </div>
                     </div>
                     <div>
                         <label for="subject" class="block mb-2 font-medium">Subject</label>
-                        <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none" required>
+                        <input type="text" name="subject" id="subject" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none" required>
                     </div>
                     <div>
                         <label for="message" class="block mb-2 font-medium">Message</label>
-                        <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none" required></textarea>
+                        <textarea name="message" id="message" rows="5" class="w-full px-4 py-3 rounded-lg contact-input focus:outline-none" required></textarea>
                     </div>
                     <button type="submit" class="px-8 py-3 rounded-full btn-primary font-medium w-full">
                         Send Message <i class="fas fa-paper-plane ml-2"></i>
@@ -644,7 +656,6 @@
         </div>
     </div>
 </section>
-    
     <!-- Footer -->
 <footer class="bg-darker py-12">
     <div class="container mx-auto px-6">
